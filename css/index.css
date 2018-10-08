@@ -161,4 +161,5 @@ p {
   position: absolute;
   z-index: 1000;
   color: white;
+  left: 30;
 }
