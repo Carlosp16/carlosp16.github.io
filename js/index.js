@@ -98,3 +98,8 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 4000);
+
+function changeContent() {
+  var d = document.getElementById("#contact");
+  d.className += " otherclass";
+}
