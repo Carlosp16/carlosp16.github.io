@@ -27,7 +27,7 @@ li {
   width: 550px;
 }
 
-@media (max-width: 500pc) {
+@media (max-width: 500px) {
   #range {
     top: 30;
     left: 0;
