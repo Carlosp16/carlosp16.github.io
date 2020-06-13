@@ -247,3 +247,29 @@ p {
   text-decoration: none;
   color: white;
 }
+
+.raphael-group-5-background rect {
+  fill: black !important;
+  opacity: 1 !important;
+}
+
+#skills {
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+#skills .starter-template {
+  display: block;
+  position: relative;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+#chart-container {
+  width: 500px;
+  margin: auto;
+}
