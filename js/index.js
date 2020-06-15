@@ -99,7 +99,25 @@ function splitLetters(word) {
 changeWord();
 setInterval(changeWord, 4000);
 
-function changeContent() {
-  var d = document.getElementById("#contact");
-  d.className += " otherclass";
+function changeContent(active) {
+  if(active === "contact"){
+    var d = document.getElementById("contact");
+    var e = document.getElementById("skills");
+    var dmenu = document.getElementById("menu-contact");
+    var emenu = document.getElementById("menu-skills");
+    dmenu.className += " active";
+    emenu.classList.remove("active");
+    e.className += " hidden";
+    d.classList.remove("hidden");
+  }
+  else {
+    var e = document.getElementById("contact");
+    var d = document.getElementById("skills");
+    var dmenu = document.getElementById("menu-contact");
+    var emenu = document.getElementById("menu-skills");
+    e.className += " hidden";
+    d.classList.remove("hidden");
+    emenu.className += " active";
+    dmenu.classList.remove("active");
+  }
 }

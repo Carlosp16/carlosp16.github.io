@@ -131,7 +131,7 @@
         <div class="img" id="img-3"></div>
     </li>
 </ul>
-<div id="#contact" class="container without-margin temporal hidden">
+<div id="contact" class="container without-margin temporal hidden">
 
     <div class="starter-template">
         <h1>Contact Me</h1>
@@ -141,7 +141,7 @@
     </div>
 
 </div>
-<div id="#home" class="container temporal hidden">
+<div id="home" class="container temporal hidden">
 
     <div class="starter-template">
         <h1>Working on this site </h1>
@@ -168,16 +168,14 @@
 </div>
 <div class="container menu">
     <div class="row">
-        <div class="menuItem col-sm">
-            <a href "#">
+        <div class="menuItem col-sm" id="menu-portfolio">
                 <p class="textMenu">Portfolio</p>
-            </a>
         </div>
-        <div class="menuItem col-sm">
+        <div class="menuItem col-sm active" onclick="changeContent('skills')" id="menu-skills">
             <p class="textMenu">Skills</p>
         </div>
-        <div class="menuItem col-sm active">
-            <p class="textMenu text-active">Contact Me</p>
+        <div class="menuItem col-sm" onclick="changeContent('contact')" id="menu-contact">
+            <p class="textMenu">Contact Me</p>
         </div>
         <!-- /.container -->
         <script src="./js/index.js"></script>
