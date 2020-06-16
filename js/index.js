@@ -103,21 +103,44 @@ function changeContent(active) {
   if(active === "contact"){
     var d = document.getElementById("contact");
     var e = document.getElementById("skills");
+    var p = document.getElementById("portfolio");
     var dmenu = document.getElementById("menu-contact");
     var emenu = document.getElementById("menu-skills");
+    var pmenu = document.getElementById("menu-portfolio");
     dmenu.className += " active";
     emenu.classList.remove("active");
+    pmenu.classList.remove("active");
+    e.className += " hidden";
+    p.className += " hidden";
+    d.classList.remove("hidden");
+  }
+  else if(active === "skills")  {
+    var e = document.getElementById("contact");
+    var d = document.getElementById("skills");
+    var p = document.getElementById("portfolio");
+    var dmenu = document.getElementById("menu-contact");
+    var emenu = document.getElementById("menu-skills");
+    var pmenu = document.getElementById("menu-portfolio");
     e.className += " hidden";
     d.classList.remove("hidden");
+    p.className += " hidden";
+    emenu.className += " active";
+    dmenu.classList.remove("active");
+    pmenu.classList.remove("active");
   }
   else {
     var e = document.getElementById("contact");
     var d = document.getElementById("skills");
+    var p = document.getElementById("portfolio");
     var dmenu = document.getElementById("menu-contact");
     var emenu = document.getElementById("menu-skills");
+    var pmenu = document.getElementById("menu-portfolio");
     e.className += " hidden";
-    d.classList.remove("hidden");
-    emenu.className += " active";
+    p.classList.remove("hidden");
+    d.className += " hidden";
+    pmenu.className += " active";
     dmenu.classList.remove("active");
+    emenu.classList.remove("active");
+    
   }
 }

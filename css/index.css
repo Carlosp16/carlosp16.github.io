@@ -278,3 +278,13 @@ html {
 .active p {
   color: #2980b9;
 }
+
+@media (max-width: 600px) {
+  #skills {
+    top: 110;
+  }
+
+  #portfolio {
+    left: 0;
+  }
+}

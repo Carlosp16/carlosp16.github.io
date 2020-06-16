@@ -19,8 +19,8 @@
     type: 'multilevelpie',
     renderAt: 'chart-container',
 
-    width: '500',
-    height: '500',
+    width: window.innerWidth > 750 ? '500':'380',
+    height: window.innerWidth > 750 ? '500':'380',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -84,15 +84,15 @@
                 "color": "#ccff66",
                 "value": "30",
                 "category": [{
-                    "label": "Laptops",
+                    "label": "Devops",
                     "color": "#ccff66",
                     "value": "8.1"
                 }, {
-                    "label": "Televisions",
+                    "label": "UX/UI",
                     "color": "#ccff66",
                     "value": "10.5"
                 }, {
-                    "label": "SmartPhones",
+                    "label": "DB",
                     "color": "#ccff66",
                     "value": "11.4"
                 }]
@@ -141,16 +141,21 @@
     </div>
 
 </div>
-<div id="home" class="container temporal hidden">
+<div id="portfolio" class="container temporal">
 
     <div class="starter-template">
-        <h1>Working on this site </h1>
         <p class="lead">
-            This site will be available in 2019</p>
+            A passionate, hands-on professional, I have 5 years’ experience in Web and Mobile
+            development. Enthusiast about programming and learning new technologies. I'm a fast
+            learner and new projects keep me motivated. Analytical, detail-oriented, mainly self-taught,
+            love solving complex technical problems.</p>
+            <br/>
+            <br/>
+            <p class="lead">Porfolio In progress...</p>
     </div>
 
 </div>
-<div id="skills" class="container temporal">
+<div id="skills" class="temporal hidden">
 
     <div class="starter-template">
         <div id="chart-container">FusionCharts XT will load here!</div>
@@ -168,10 +173,10 @@
 </div>
 <div class="container menu">
     <div class="row">
-        <div class="menuItem col-sm" id="menu-portfolio">
+        <div class="menuItem col-sm active" id="menu-portfolio" onclick="changeContent('portfolio')" id="menu-skills">
                 <p class="textMenu">Portfolio</p>
         </div>
-        <div class="menuItem col-sm active" onclick="changeContent('skills')" id="menu-skills">
+        <div class="menuItem col-sm" onclick="changeContent('skills')" id="menu-skills">
             <p class="textMenu">Skills</p>
         </div>
         <div class="menuItem col-sm" onclick="changeContent('contact')" id="menu-contact">
