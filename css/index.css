@@ -249,7 +249,11 @@ p {
   color: white;
 }
 
-.raphael-group-5-background rect {
+.raphael-group-5-background rect,
+.raphael-group-2-background rect,
+.raphael-group-1-background rect,
+.raphael-group-3-background rect,
+.raphael-group-4-background rect {
   fill: black !important;
   opacity: 1 !important;
 }
