@@ -128,7 +128,7 @@ function changeContent(active) {
     dmenu.classList.remove("active");
     pmenu.classList.remove("active");
   }
-  else {
+  else if(active === "portfolio"){
     var e = document.getElementById("contact");
     var d = document.getElementById("skills");
     var p = document.getElementById("portfolio");
