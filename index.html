@@ -1,188 +1,247 @@
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-	<script type="text/javascript">
-		FusionCharts.ready(function(){
-			var chartObj = new FusionCharts({
-    type: 'multilevelpie',
-    renderAt: 'chart-container',
+    <script
+      type="text/javascript"
+      src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
+    ></script>
+    <script type="text/javascript">
+      FusionCharts.ready(function () {
+        var chartObj = new FusionCharts({
+          type: "multilevelpie",
+          renderAt: "chart-container",
 
-    width: window.innerWidth > 750 ? '500':'380',
-    height: window.innerWidth > 750 ? '500':'380',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "showPlotBorder": "1",
-            "piefillalpha": "60",
-            "pieborderthickness": "2",
-            "hoverfillcolor": "#4FE9DD",
-            "piebordercolor": "transparent",
-            "hoverfillcolor": "#4FE9DD",
-            "numberprefix": "",
-            "plottooltext": "",
-            //Theme
-            "theme": "fusion"
-        },
-        "category": [{
-            "label": "Skills",
-            "color": "#4F7EE9",
-            "value": "100",
-            "category": [{
-                "label": "Frontend",
-                "color": "#f8bd19",
-                "value": "50",
-                "tooltext": "",
-                "category": [{
-                    "label": "React",
-                    "color": "#f8bd19",
-                    "value": "11.1"
-                }, {
-                    "label": "React Native",
-                    "color": "#f8bd19",
-                    "value": "27.75"
-                }, {
-                    "label": "Angular",
-                    "color": "#f8bd19",
-                    "value": "9.99"
-                }, {
-                    "label": "Typescript",
-                    "color": "#f8bd19",
-                    "value": "6.66"
-                }]
-            }, {
-                "label": "Backend",
-                "color": "#33ccff",
-                "value": "20",
-                "tooltext": "",
-                "category": [{
-                    "label": "ExpressJS",
-                    "color": "#33ccff",
-                    "value": "20"
-                }, {
-                    "label": "CakePHP",
-                    "color": "#33ccff",
-                    "value": "15"
-                }, {
-                    "label": "PHP",
-                    "color": "#33ccff",
-                    "value": "6.3"
-                }]
-            }, {
-                "label": "Basics",
-                "color": "#ccff66",
-                "value": "30",
-                "category": [{
-                    "label": "Devops",
-                    "color": "#ccff66",
-                    "value": "8.1"
-                }, {
-                    "label": "UX/UI",
-                    "color": "#ccff66",
-                    "value": "10.5"
-                }, {
-                    "label": "DB",
-                    "color": "#ccff66",
-                    "value": "11.4"
-                }]
-            }]
-        }]
-    }
-}
-);
-			chartObj.render();
-		});
-	</script>
-</head>
+          width: window.innerWidth > 750 ? "500" : "380",
+          height: window.innerWidth > 750 ? "500" : "380",
+          dataFormat: "json",
+          dataSource: {
+            chart: {
+              showPlotBorder: "1",
+              piefillalpha: "60",
+              pieborderthickness: "2",
+              hoverfillcolor: "#4FE9DD",
+              piebordercolor: "transparent",
+              hoverfillcolor: "#4FE9DD",
+              numberprefix: "",
+              plottooltext: "",
+              //Theme
+              theme: "fusion",
+            },
+            category: [
+              {
+                label: "Skills",
+                color: "#4F7EE9",
+                value: "100",
+                category: [
+                  {
+                    label: "Frontend",
+                    color: "#f8bd19",
+                    value: "50",
+                    tooltext: "",
+                    category: [
+                      {
+                        label: "React",
+                        color: "#f8bd19",
+                        value: "11.1",
+                      },
+                      {
+                        label: "React Native",
+                        color: "#f8bd19",
+                        value: "27.75",
+                      },
+                      {
+                        label: "Angular",
+                        color: "#f8bd19",
+                        value: "9.99",
+                      },
+                      {
+                        label: "Typescript",
+                        color: "#f8bd19",
+                        value: "6.66",
+                      },
+                    ],
+                  },
+                  {
+                    label: "Backend",
+                    color: "#33ccff",
+                    value: "20",
+                    tooltext: "",
+                    category: [
+                      {
+                        label: "ExpressJS",
+                        color: "#33ccff",
+                        value: "20",
+                      },
+                      {
+                        label: "CakePHP",
+                        color: "#33ccff",
+                        value: "15",
+                      },
+                      {
+                        label: "PHP",
+                        color: "#33ccff",
+                        value: "6.3",
+                      },
+                    ],
+                  },
+                  {
+                    label: "Basics",
+                    color: "#ccff66",
+                    value: "30",
+                    category: [
+                      {
+                        label: "Devops",
+                        color: "#ccff66",
+                        value: "8.1",
+                      },
+                      {
+                        label: "UX/UI",
+                        color: "#ccff66",
+                        value: "10.5",
+                      },
+                      {
+                        label: "DB",
+                        color: "#ccff66",
+                        value: "11.4",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        });
+        chartObj.render();
+      });
+    </script>
+  </head>
 
-
-<div class="slider-box">
+  <div class="slider-box">
     <div id="range">
-        <p>Carlos Pereira</p>
-        <p>
-            <span class="word wisteria">Tech Lover</span>
-            <span class="word belize">Coder</span>
-            <span class="word pomegranate">Proactive</span>
-            <span class="word green">Researcher</span>
-            <span class="word midnight">Creative</span>
-        </p>
+      <p>Carlos Pereira</p>
+      <p>
+        <span class="word wisteria">Tech Lover</span>
+        <span class="word belize">Coder</span>
+        <span class="word pomegranate">Proactive</span>
+        <span class="word green">Researcher</span>
+        <span class="word midnight">Creative</span>
+      </p>
     </div>
-</div>
-<ul id="scene" data-friction-x="0.03" data-friction-y="0.05">
+  </div>
+  <ul id="scene" data-friction-x="0.03" data-friction-y="0.05">
     <li class="layer" id="specks" data-depth="0.1"></li>
     <li class="layer" id="layer-1" data-depth="0.15">
-        <div class="img" id="img-1"></div>
+      <div class="img" id="img-1"></div>
     </li>
     <li class="layer" id="layer-2" data-depth="0.25">
-        <div class="img" id="img-2"></div>
+      <div class="img" id="img-2"></div>
     </li>
     <li class="layer" id="layer-3" data-depth="0.45">
-        <div class="img" id="img-3"></div>
+      <div class="img" id="img-3"></div>
     </li>
-</ul>
-<div id="contact" class="container without-margin temporal hidden">
-
+  </ul>
+  <div id="contact" class="container without-margin temporal hidden">
     <div class="starter-template">
-        <h1>Contact Me</h1>
-        <p class="lead contactInfo"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/carlospereiraucv/">linkedin.com/in/carlospereiraucv</a></p>
-        <p class="lead contactInfo"><i class="fas fa-envelope"></i><a href="mailto:cpereira379@gmail.com">cpereira379@gmail.com</a></p>
-        <p class="lead contactInfo"><i class="fas fa-location-arrow"></i>Madrid, Spain</p>
+      <h1>Contact Me</h1>
+      <p class="lead contactInfo mb-2">
+        <i class="fab fa-linkedin-in"></i
+        ><a href="https://www.linkedin.com/in/carlospereiraucv/" target="_blank"
+          >linkedin.com/in/carlospereiraucv</a
+        >
+      </p>
+      <p class="lead contactInfo mb-2">
+        <i class="fas fa-envelope"></i
+        ><a href="mailto:cpereira379@gmail.com" target="_blank">cpereira379@gmail.com</a>
+      </p>
+      <p class="lead contactInfo mb-2">
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/Carlosp16" target="_blank">Github</a>
+      </p>
+      <p class="lead contactInfo mb-2">
+        <i class="fab fa-codepen"></i>
+        <a href="https://codepen.io/Carlosp16/pens/public" target="_blank">Codepen</a>
+      </p>
     </div>
-
-</div>
-<div id="portfolio" class="container temporal">
-
+  </div>
+  <div id="portfolio" class="container temporal">
     <div class="starter-template">
-        <p class="lead">
-            A passionate, hands-on professional, I have 5 years’ experience in Web and Mobile
-            development. Enthusiast about programming and learning new technologies. I'm a fast
-            learner and new projects keep me motivated. Analytical, detail-oriented, mainly self-taught,
-            love solving complex technical problems.</p>
-            <br/>
-            <br/>
-            <p class="lead">Portfolio In progress...</p>
+      <p class="lead">
+        A passionate, hands-on professional, I have 5 years’ experience in Web
+        and Mobile development. Enthusiast about programming and learning new
+        technologies. I'm a fast learner and new projects keep me motivated.
+        Analytical, detail-oriented, mainly self-taught, love solving complex
+        technical problems.
+      </p>
+      <br />
+      <br />
+      <p class="lead">Portfolio In progress...</p>
     </div>
-
-</div>
-<div id="skills" class="temporal hidden">
-
+  </div>
+  <div id="skills" class="temporal hidden">
     <div class="starter-template">
-        <div id="chart-container">FusionCharts XT will load here!</div>
+      <div id="chart-container">FusionCharts XT will load here!</div>
     </div>
-
-</div>
-<div class="container mainBox">
+  </div>
+  <div class="container mainBox">
     <div class="row">
-        <div class="box">
-            <div class="content1  hidden">a</div>
-            <div class="content2 hidden">b</div>
-            <div class="content3 hidden">c</div>
-        </div>
+      <div class="box">
+        <div class="content1 hidden">a</div>
+        <div class="content2 hidden">b</div>
+        <div class="content3 hidden">c</div>
+      </div>
     </div>
-</div>
-<div class="container menu">
+  </div>
+  <div class="container menu">
     <div class="row">
-        <div class="menuItem col-sm active" id="menu-portfolio" onclick="changeContent('portfolio')" id="menu-skills">
-                <p class="textMenu">Portfolio</p>
-        </div>
-        <div class="menuItem col-sm" onclick="changeContent('skills')" id="menu-skills">
-            <p class="textMenu">Skills</p>
-        </div>
-        <div class="menuItem col-sm" onclick="changeContent('contact')" id="menu-contact">
-            <p class="textMenu">Contact Me</p>
-        </div>
-        <!-- /.container -->
-        <script src="./js/index.js"></script>
-
+      <div
+        class="menuItem col-sm active"
+        id="menu-portfolio"
+        onclick="changeContent('portfolio')"
+        id="menu-skills"
+      >
+        <p class="textMenu">About me</p>
+      </div>
+      <div
+        class="menuItem col-sm"
+        onclick="changeContent('skills')"
+        id="menu-skills"
+      >
+        <p class="textMenu">Skills</p>
+      </div>
+      <div
+        class="menuItem col-sm"
+        onclick="changeContent('contact')"
+        id="menu-contact"
+      >
+        <p class="textMenu">Contact Me</p>
+      </div>
+      <!-- /.container -->
+      <script src="./js/index.js"></script>
+    </div>
+  </div>
 </html>

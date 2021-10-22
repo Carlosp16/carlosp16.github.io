@@ -224,10 +224,34 @@ p {
 }
 
 .active {
-  border-bottom: 5px solid #2980b9;
+  animation: mymoveBorder 0.4s;
   border-top: 5px solid #2980b9;
-  background: rgba(41, 128, 185, 0.1);
+  border-bottom: 5px solid #2980b9;
+}
+
+.active p {
+  animation: mymove 0.4s;
   color: #2980b9;
+}
+
+@keyframes mymove {
+  from {
+    color: white;
+  }
+  to {
+    color: #2980b9;
+  }
+}
+
+@keyframes mymoveBorder {
+  0% {
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+  }
+  100% {
+    border-top: 5px solid #2980b9;
+    border-bottom: 5px solid #2980b9;
+  }
 }
 
 .temporal {
@@ -277,10 +301,6 @@ html {
 #chart-container {
   width: 500px;
   margin: auto;
-}
-
-.active p {
-  color: #2980b9;
 }
 
 @media (max-width: 600px) {
